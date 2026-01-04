@@ -23,7 +23,7 @@ DISCOGS_TOKEN = os.getenv("DISCOGS_TOKEN")
 if not DISCOGS_TOKEN:
     raise RuntimeError("Missing DISCOGS_TOKEN. Create a .env file with DISCOGS_TOKEN=your_token_here")
 
-USER_AGENT = "AdamRecordValuer/1.0 (contact: amazza@gmail.com)"
+USER_AGENT = "AdamRecordValuer/1.0 (contact: users@gmail.com)"
 CURRENCY = "USD"
 BASE = "https://api.discogs.com"
 
