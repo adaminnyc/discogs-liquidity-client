@@ -57,3 +57,28 @@ It works for:
 		Your own collection
 		Another user’s public collection
 		Either live API data or a CSV export
+
+## What “Liquidity” Means
+
+Liquidity = how quickly and easily a record is likely to sell.
+A record that sells tomorrow for $30 is more liquid than a $200 record that sits unsold for months.
+This tool focuses on sellability, not maximum value.
+
+## How the Liquidity Score Works
+
+The score is based only on data Discogs makes available via its API:
+
+		Want count (demand)
+		Have count (supply already owned)
+		Number of active listings
+		Whether Discogs allows the item to be sold
+
+In simple terms:
+
+	•	High want + low have → higher score
+	•	Active listings → healthier market
+	•	No listings → harder to price and sell
+	•	Blocked items → effectively unsellable
+
+The score is relative, not absolute.
+It’s meant to rank items within the same run, not compare across collections.
