@@ -101,3 +101,30 @@ Because of this:
 	•	Being “friends” on Discogs does not grant access
 	•	Only public collections and public folders can be fetched
 	•	Folder privacy settings matter
+
+## Setup Instructions
+
+## Create a Virtual Environment
+
+#### macOS / Linux
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+### Windows (powershell)
+```bash
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
+
+## Install Dependancies
+```bash
+pip install pandas requests python-dotenv
+```
+
+## Discogs API Setup
+	1.	Go to https://www.discogs.com/settings/developers
+	2.	Create a Personal Access Token
+	3.	Create a .env file in the project root:
+	
+	DISCOGS_TOKEN=your_discogs_token_here
