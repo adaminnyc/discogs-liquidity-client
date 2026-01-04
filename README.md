@@ -128,3 +128,46 @@ pip install pandas requests python-dotenv
 	3.	Create a .env file in the project root:
 	
 	DISCOGS_TOKEN=your_discogs_token_here
+
+### Command line usage (running with no arguements prints usage)
+	python3 app.py
+
+## API Mode (Recommended)
+
+
+#### Fetch your Selling folder (default):
+	
+	python3 app.py --user username
+#### Fetch a specific folder
+
+	python3 app.py --user username --category keepers
+#### Fetch all public folders
+
+	python3 app.py --user username --category all
+
+## CVS mode (optional) provide your exported discogs collection
+
+
+	python3 app.py --source csv \
+  	--input my_collection.csv \
+ 	 --category selling
+
+## Caching & Performance
+
+To stay within Discogs rate limits, the script uses a local cache.
+
+Defaults:  
+	-	Marketplace data refreshes every 24 hours  
+	-	Want/Have counts refresh every 14 days
+
+### Override Timing
+
+	python3 app.py --user username --marketplace-ttl 3600
+
+### Force everything to refresh
+
+	python3 app.py --user username --marketplace-ttl 0 --release-ttl 0
+
+	
+
+	
