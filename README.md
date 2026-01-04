@@ -82,3 +82,22 @@ In simple terms:
 
 The score is relative, not absolute.
 It’s meant to rank items within the same run, not compare across collections.
+
+
+## Limitations
+
+❌ No Median or High Prices
+
+Discogs does not expose median or high sale prices via the API.
+
+Because of this:
+
+	•	Only the lowest current listing price is included
+	•	Median / high prices are not calculated or estimated
+	•	Final pricing decisions are still manual
+
+❌ Private Collections Are Not Accessible:
+
+	•	Being “friends” on Discogs does not grant access
+	•	Only public collections and public folders can be fetched
+	•	Folder privacy settings matter
