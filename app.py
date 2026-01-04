@@ -23,7 +23,13 @@ DISCOGS_TOKEN = os.getenv("DISCOGS_TOKEN")
 if not DISCOGS_TOKEN:
     raise RuntimeError("Missing DISCOGS_TOKEN. Create a .env file with DISCOGS_TOKEN=your_token_here")
 
-USER_AGENT = "AdamRecordValuer/1.0 (contact: users@gmail.com)"
+# ONLY CHANGE: read email for User-Agent from .env
+DISCOGS_EMAIL = os.getenv("DISCOGS_EMAIL")
+if not DISCOGS_EMAIL:
+    raise RuntimeError("Missing DISCOGS_EMAIL. Add it to your .env file.")
+
+USER_AGENT = f"DiscogsCollectionLiquidity/1.0 (contact: {DISCOGS_EMAIL})"
+
 CURRENCY = "USD"
 BASE = "https://api.discogs.com"
 
