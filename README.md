@@ -168,6 +168,28 @@ Defaults:
 
 	python3 app.py --user username --marketplace-ttl 0 --release-ttl 0
 
-	
+### Disavle caching entirely
+
+	python3 app.py --user adaminnyc --no-cache
+
+## Output
+
+The script generates
+
+	collection-output-MMDDYYYY.csv
+
+### Included columns:
+	•	Sell Order
+	•	Folder
+	•	Artist / Title / Label
+	•	Format / Year / Catalog #
+	•	Discogs release link
+	•	Want count
+	•	Have count
+	•	Listings for sale
+	•	Lowest price
+	•	Liquidity score
+
+
 
 	
