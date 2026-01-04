@@ -19,7 +19,8 @@ pip install pandas requests python-dotenv
 
 Create a .env file
 
-DISCOGS_TOKEN=your_discogs_token_here
+DISCOGS_TOKEN=your_discogs_token_here\
+DISCOGS_EMAIL=youremail@email.com
 
 Run the script (if no category/folder is passed it defaults to one called "selling"
 ```bash
