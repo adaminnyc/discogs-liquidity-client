@@ -10,7 +10,7 @@ A tool for Discogs users to understand **which records are likely to sell fastes
 If you already have Python installed:
 
 ```bash
-git clone https://github.com/adaminnyc/discogs-liquidity-analyzer.git
+git clone https://github.com/adaminnyc/discogs-liquidity-client.git
 cd discogs-liquidity-analyzer
 python3 -m venv venv
 source venv/bin/activate   # Windows: .\venv\Scripts\Activate.ps1
