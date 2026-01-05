@@ -145,7 +145,7 @@ pip install pandas requests python-dotenv
 
 	python3 app.py --user username --category all
 
-## CVS mode (optional) provide your exported discogs collection
+## CSV mode (optional) provide your exported discogs collection
 
 
 	python3 app.py --source csv \
